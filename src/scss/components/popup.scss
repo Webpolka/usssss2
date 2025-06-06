@@ -172,22 +172,25 @@
 		padding: 60px 120px;
 		max-width: 938px;
 		min-height: 148px;
-		background: linear-gradient(180deg, #f89061 0%, #ffa57c 100%);
+		background: linear-gradient(180deg, #f89061 0%, #ffa57c 50%);
 		background-size: 100% 200%;
 		
 		transition: all 0.3s ease-in-out;
 		margin-inline: auto;
 		&:hover {
-			animation: gradientAnimation 1s ease forwards;
+			animation: gradientAnimation 1s ease infinite;
 		}
 
 		@keyframes gradientAnimation {
 			0% {
 				background-position: 0% 0%;
 			}			
-			100% {
-				background-position: 0% 200%;
+			50% {
+				background-position: 0% 100%;
 			}
+			100% {
+				background-position: 0% 0%;
+			}			
 		}
 
 		span {

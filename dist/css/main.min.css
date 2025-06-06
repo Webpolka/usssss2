@@ -584,11 +584,24 @@ body {
   padding: 60px 120px;
   width: 479px;
   height: 176px;
-  background: linear-gradient(180deg, #f89061 0%, #ffa57c 100%);
+  background: linear-gradient(180deg, #f89061 0%, #ffa57c 50%);
+  background-size: 100% 200%;
   transition: all 0.3s ease-in-out;
+  margin-inline: auto;
 }
 .start_button button:hover {
-  background: linear-gradient(180deg, #fa6e2c 0%, #ffa57c 100%);
+  animation: gradientAnimation 1s ease infinite;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 /* ----------------------------------------------------------------------------------------------------------------
@@ -852,13 +865,15 @@ body {
   gap: 40px;
   margin-bottom: 20px;
 }
-.profile-content_tabs span, .profile-content_tabs button {
+.profile-content_tabs span,
+.profile-content_tabs button {
   font-weight: 400;
   font-size: 30px;
   color: #598552;
   transition: all 0.3s ease-in-out;
 }
-.profile-content_tabs span.active, .profile-content_tabs button.active {
+.profile-content_tabs span.active,
+.profile-content_tabs button.active {
   font-weight: 700;
 }
 .profile-content_panels .panel {
@@ -1143,20 +1158,23 @@ body {
   padding: 60px 120px;
   max-width: 938px;
   min-height: 148px;
-  background: linear-gradient(180deg, #f89061 0%, #ffa57c 100%);
+  background: linear-gradient(180deg, #f89061 0%, #ffa57c 50%);
   background-size: 100% 200%;
   transition: all 0.3s ease-in-out;
   margin-inline: auto;
 }
 .popup-callback_btn:hover {
-  animation: gradientAnimation 1s ease forwards;
+  animation: gradientAnimation 1s ease infinite;
 }
 @keyframes gradientAnimation {
   0% {
     background-position: 0% 0%;
   }
+  50% {
+    background-position: 0% 100%;
+  }
   100% {
-    background-position: 0% 200%;
+    background-position: 0% 0%;
   }
 }
 .popup-callback_btn span {
