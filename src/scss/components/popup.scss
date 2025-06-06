@@ -41,7 +41,7 @@
 		font-size: 1.1rem;
 		font-weight: bold;
 	}
-	&-buttons{
+	&-buttons {
 		display: inline-flex;
 		align-items: center;
 		flex-wrap: nowrap;
@@ -70,7 +70,7 @@
 /* ----------------------------------------------------------------------------------------------------------------
 ВСПЛЫВАЮЩИЕ БАЛЛЫ
 ------------------------------------------------------------------------------------------------------------------*/
-.counter_wrapper {	
+.counter_wrapper {
 	position: fixed;
 	top: 20px;
 	left: 0;
@@ -88,8 +88,8 @@
 	position: absolute;
 	right: 0;
 	top: 0;
-	display: none;	
-	text-align: center;	
+	display: none;
+	text-align: center;
 	font-size: 2rem;
 	line-height: 110%;
 	color: rgb(66, 66, 66);
@@ -173,11 +173,21 @@
 		max-width: 938px;
 		min-height: 148px;
 		background: linear-gradient(180deg, #f89061 0%, #ffa57c 100%);
+		background-size: 100% 200%;
+		
 		transition: all 0.3s ease-in-out;
-
 		margin-inline: auto;
 		&:hover {
-			background: linear-gradient(180deg, #fb7c41 0%, #f8b799 100%);
+			animation: gradientAnimation 1s ease forwards;
+		}
+
+		@keyframes gradientAnimation {
+			0% {
+				background-position: 0% 0%;
+			}			
+			100% {
+				background-position: 0% 200%;
+			}
 		}
 
 		span {
