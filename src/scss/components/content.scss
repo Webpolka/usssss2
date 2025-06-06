@@ -60,12 +60,11 @@
 
 	font-weight: 400;
 	font-size: 30px;
-	line-height: 90%;
-	text-decoration: underline;
+	line-height: 90%;	
 	text-decoration-skip-ink: none;
 	color: var(--black-text);
 	&:hover {
-		text-decoration: none;
+		text-decoration: underline;
 	}
 }
 
@@ -73,12 +72,11 @@
 .frame-links_right a {
 	font-weight: 500;
 	font-size: 25px;
-	line-height: 90%;
-	text-decoration: underline;
+	line-height: 90%;	
 	text-decoration-skip-ink: none;
 	color: var(--black-text);
 	&:hover {
-		text-decoration: none;
+		text-decoration: underline;
 	}
 }
 

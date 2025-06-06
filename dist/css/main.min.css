@@ -419,12 +419,11 @@ body {
   font-weight: 400;
   font-size: 30px;
   line-height: 90%;
-  text-decoration: underline;
   text-decoration-skip-ink: none;
   color: var(--black-text);
 }
 .frame-links_left a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* 7... Стилизуем правую ссылку */
@@ -432,12 +431,11 @@ body {
   font-weight: 500;
   font-size: 25px;
   line-height: 90%;
-  text-decoration: underline;
   text-decoration-skip-ink: none;
   color: var(--black-text);
 }
 .frame-links_right a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .padding-inline {
