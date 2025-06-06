@@ -484,8 +484,8 @@ body {
 .warning img {
   position: relative;
   content: "";
-  width: 240px;
-  height: 165px;
+  width: 264px;
+  height: 200px;
   top: 30px;
   left: 50px;
 }
